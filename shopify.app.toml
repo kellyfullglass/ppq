@@ -2,7 +2,7 @@
 
 name = "remix-ppq"
 client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
-application_url = "https://ni-jurisdiction-sam-exp.trycloudflare.com"
+application_url = "https://morgan-bm-drew-dos.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_customers,write_customers"
 
 [auth]
 redirect_urls = [
-  "https://ni-jurisdiction-sam-exp.trycloudflare.com/auth/callback",
-  "https://ni-jurisdiction-sam-exp.trycloudflare.com/auth/shopify/callback",
-  "https://ni-jurisdiction-sam-exp.trycloudflare.com/api/auth/callback"
+  "https://morgan-bm-drew-dos.trycloudflare.com/auth/callback",
+  "https://morgan-bm-drew-dos.trycloudflare.com/auth/shopify/callback",
+  "https://morgan-bm-drew-dos.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
