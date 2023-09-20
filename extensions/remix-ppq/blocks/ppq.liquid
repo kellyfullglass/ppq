@@ -1,0 +1,785 @@
+<div class="full__page__form__wrapper">
+  <div class="wrapper">
+    <div class="grid">
+      <div class="grid__item one-whole text-center mobile--one-whole">
+        <div class="full__page__form">
+          <h2 class="text-center">Winc PPQ</h2>
+
+          <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+            <!-- Step 1 -->
+            <li class="form-stepper-active text-center form-stepper-list" step="1">
+              <a class="mx-2">
+                <span class="form-stepper-circle">
+                  <span>1</span>
+                </span>
+                <!--
+                <div class="label">Red or White?</div>
+                -->
+              </a>
+            </li>
+            <!-- Step 2 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+              <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                  <span>2</span>
+                </span>
+                <!--
+                <div class="label text-muted">Flavors</div>
+                -->
+              </a>
+            </li>
+            <!-- Step 3 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+              <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                  <span>3</span>
+                </span>
+                <!--
+                <div class="label text-muted">Sweet or Dry?</div>
+                -->
+              </a>
+            </li>
+            <!-- Step 4 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+              <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                  <span>4</span>
+                </span>
+                <!--
+                <div class="label text-muted">Regions</div>
+                -->
+              </a>
+            </li>
+            <!-- Step 5 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+              <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                  <span>5</span>
+                </span>
+                <!--
+                <div class="label text-muted">Food Pairings</div>
+                -->
+              </a>
+            </li>
+            <!-- Step  6-->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
+              <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                  <span>6</span>
+                </span>
+                <!--
+                <div class="label text-muted">Finish</div>
+                -->
+              </a>
+            </li>
+          </ul>
+
+          <!----------Begin Form------------->
+
+          <div id="multi-step-form-container">
+            <div id="contact_form">
+              {% form 'customer' %}
+                {%- if form.posted_successfully? -%}
+                  <p class="form-success">
+                    {{ 'contact.form.post_success' | t }}
+                  </p>
+                {%- endif -%}
+
+                {{ form.errors | default_errors }}
+
+                {% comment %}
+                Wine Value
+                {% endcomment %}
+                <div class="form-step" id="step-1">
+                  <div class="wine">
+                    <h3>Do you prefer red or white wine?</h3>
+                    <img
+                      id="wine-value-img"
+                      class="two-thirds"
+                      src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/red_white_wine_value.png?v=1695061893" />
+                    <label for="wine-value"></label>
+                    <select class="align--middle-center" id="wine-value-select">
+                      <option>All Reds</option>
+                      <option>All Whites</option>
+                      <option>Mostly Reds</option>
+                      <option>Mostly Whites</option>
+                      <option>A Mix of Reds & Whites</option>
+                    </select>
+                    <p class="d-none" id="wine-result"></p>
+                  </div>
+                  <button
+                    class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                    type="button"
+                    step_number="2">Next Question</button>
+                </div>
+                {% comment %}
+                Flavors
+                {% endcomment %}
+                <div class="form-step d-none" id="step-2">
+                  <div class="flavors">
+                    <fieldset id="flavors-wrapper">
+                      <h3>What kinds of flavors do you like?</h3>
+
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/strawberry_2x_9b2f08ab-b22d-4720-966b-0d0917bd9ace.png?v=1695049729" />
+                        <input
+                          class="flavors-input"
+                          type="checkbox"
+                          id="Strawberry"
+                          name="flavors"
+                          value="Strawberry" />
+                        <h6>Strawberry</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/raspberry_2x_429d79d1-3e6a-45d2-804c-2f5021de2233.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Raspberry"
+                          name="flavors"
+                          value="Raspberry" />
+                        <h6>Raspberry</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/lime_2x_ed783605-bfc5-482b-8394-f6282e808b6a.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Lime-Zest"
+                          name="flavors"
+                          value="Lime Zest" />
+                        <h6>Lime Zest</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/blackberry_2x_bebf975b-9878-436e-bded-bf6a2c8d40d9.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Blackberry"
+                          name="flavors"
+                          value="Blackberry" />
+                        <h6>Blackberry</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/melon_2x_d9b40c5c-34a9-46fb-bb8f-95d24c8c9256.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Melon"
+                          name="flavors"
+                          value="Melon" />
+                        <h6>
+                          Melon
+                        </h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/pineapple_2x_ff6e5d2a-c799-4236-b7b5-0c4d52e1e491.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Pineapple"
+                          name="flavors"
+                          value="Pineapple" />
+                        <h6>Pineapple</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mushroom_2x_44832024-2cfd-477c-95d2-531f785f7ae5.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Mushroom"
+                          name="flavors"
+                          value="Mushroom" />
+                        <h6>Mushroom</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/green_apple_2x_7c6f0306-8a1b-430e-8511-14d2d007cacf.png?v=1695049727" />
+                        <input
+                          type="checkbox"
+                          id="Green-Apple"
+                          name="flavors"
+                          value="Green Apple" />
+                        <h6>Green Apple</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/honey_2x_6470eb5e-f21c-4135-ad14-2298456795c5.png?v=1695049728" />
+                        <input
+                          type="checkbox"
+                          id="Honey"
+                          name="flavors"
+                          value="Honey" />
+                        <h6>Honey</h6>
+                      </div>
+                      <div class="flavor-select one-quarter"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/white_peach_2x_a09a25e9-7e95-4bc8-940a-74b8a6939325.png?v=1695049783/">
+                        <input
+                          type="checkbox"
+                          id="White-Peach"
+                          name="flavors"
+                          value="White Peach" />
+                        <h6>White Peach</h6>
+                      </div>
+
+
+                    </fieldset>
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      step_number="1">Prev</button>
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      onclick="selectAllFlavors()"
+                      step_number="3">Next</button>
+                  </div>
+                </div>
+                {% comment %}
+                Candies
+                {% endcomment %}
+                <div id="step-3" class="form-step d-none">
+                  <div class="candies">
+                    <h3>Some lunatic mixed Skittles and M&M's in the same bowl.  Which do you choose?</h3>
+                    <!--
+                    <label for="candies-value">Some lunatic mixed Skittles and M&M's in the same bowl.  Which do you choose?
+                    </label>-->
+                    <img
+                      id="sweetness-value-img"
+                      class="two-thirds"
+                      src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/candies_sweetness_value.png?v=1695063908" />
+                    <select id="candies-value-select" class="align--middle-center">
+                      <option>All Skittles</option>
+                      <option>All M&M's</option>
+                      <option>Both. In my mouth.  At the same time.
+                      </option>
+                    </select>
+                    <p class="d-none" id="candies-result"></p>
+                  </div>
+                  <div class="mt-3">
+
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      step_number="2">Previous Question</button>
+
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      step_number="4">Next Question</button>
+                  </div>
+                </div>
+
+                <!--------Regions----------->
+                {% comment %}
+                Regions
+                {% endcomment %}
+                <div class="form-step d-none" id="step-4">
+                  <div class="regions">
+                    <fieldset id="regions-wrapper">
+                      <h3>What regions are you interested in trying wines from?</h3>
+                      <div class="region-select one-quarter ">
+                        <label for="Austria"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/austria.png?v=1695218457" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Austria"
+                          name="region"
+                          value="Austria" />
+                        <h6>Austria</h6>
+                      </div>
+
+                      <div class="region-select one-quarter ">
+                        <label for="Australia"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/australia.png?v=1695218457" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Australia"
+                          name="region"
+                          value="Australia" />
+                        <h6>Australia</h6>
+                      </div>
+
+                      <div class="region-select one-quarter ">
+                        <label for="France"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/france.png?v=1694809425" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="France"
+                          name="region"
+                          value="France" />
+                        <h6>France</h6>
+                      </div>
+
+                      <div class="region-select one-quarter ">
+                        <label for="Portugal"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/portugal.png?v=1695218457" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Portugal"
+                          name="region"
+                          value="Portugal" />
+                        <h6>Portugal</h6>
+                      </div>
+
+                      <div class="region-select one-quarter ">
+                        <label for="Chile"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chile.png?v=1695218457" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Chile"
+                          name="region"
+                          value="Chile" />
+                        <h6>Chile</h6>
+                      </div>
+
+                      <div class="region-select one-quarter ">
+                        <label for="Argentina"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/argentina.png?v=1695218457" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Argentina"
+                          name="region"
+                          value="Argentina" />
+                        <h6>Argentina</h6>
+                      </div>
+                      <p id="regions-result" class="hidden"></p>
+                    </fieldset>
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      step_number="3">Prev</button>
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      onclick="selectAllRegions()"
+                      step_number="5">Next</button>
+                  </div>
+                </div>
+
+
+                {% comment %}
+                Food
+                {% endcomment %}
+                <div class="form-step d-none" id="step-5">
+                  <div id="foods">
+                    <fieldset id="food-wrapper">
+                      <h3>Like food? Tell us your favorites.</h3>
+                      <div class="food-select one-quarter">
+                        <label for="Cheese"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cheese.png?v=1694810348" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Cheese"
+                          name="food"
+                          value="Cheese" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Fries"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/fries_food.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Fries"
+                          name="food"
+                          value="Fries" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Pizza"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/pizza_food.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Pizza"
+                          name="food"
+                          value="Pizza" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Fish"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/fish_food.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Fish"
+                          name="food"
+                          value="Fish" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="BBQ"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/bbq_food.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="BBQ"
+                          name="food"
+                          value="BBQ" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Sushi"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/sushi_food.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Sushi"
+                          name="food"
+                          value="Sushi" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Cured-Meats"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cured_meat.png?v=1695067351" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Cured-Meats"
+                          name="food"
+                          value="Cured Meats" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Thai"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/thai_food.png?v=1695067350" /></label>
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Thai"
+                          name="food"
+                          value="Thai" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Salad"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/salad_food.png?v=1695067351" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Salad"
+                          name="food"
+                          value="Salad" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Veggies"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/veggies.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Veggies"
+                          name="food"
+                          value="Veggies" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Pasta & Cream Sauce"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/pasta_cream.png?v=1695067351" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Pasta & Cream Sauce"
+                          name="food"
+                          value="Pasta & Cream Sauce" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Burgers"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/burgers.png?v=1695218456" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Burgers"
+                          name="food"
+                          value="Burgers" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Lamb"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/lamb.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Lamb"
+                          name="food"
+                          value="Lamb" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Indian"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/indian.png?v=1695218456" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Indian"
+                          name="food"
+                          value="Indian" />
+                      </div>
+                      <div class="food-select one-quarter">
+                        <label for="Shellfish"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/shellfish.png?v=1695218456" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Shellfish"
+                          name="food"
+                          value="Shellfish" />
+                      </div>
+                      <div class="food-select one-third">
+                        <label for="Chili"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chili.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Chili"
+                          name="food"
+                          value="Chili" />
+                      </div>
+                      <div class="food-select one-third">
+                        <label for="Chinese"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chinese.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Chinese"
+                          name="food"
+                          value="Chinese" />
+                      </div>
+                      <div class="food-select one-third">
+                        <label for="Chocolate Cake"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chocolate_cake.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Chocolate Cake"
+                          name="food"
+                          value="Chocolate Cake" />
+                      </div>
+                      <div class="food-select one-third">
+                        <label for="Poultry"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/poultry.png?v=1695218457" /></label>
+
+                        <input
+                          class="d-none"
+                          type="checkbox"
+                          id="Poultry"
+                          name="food"
+                          value="Poultry" />
+                      </div>
+                      <!--
+                      <label for="Pasta & Red Sauce"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cheese.png?v=1694810348" /></label>
+
+                      <input
+                      class="d-none"
+                      type="checkbox"
+                      id="Pasta & Red Sauce"
+                      name="food"
+                      value="Pasta & Red Sauce" />
+
+                      -->
+                    </fieldset>
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      step_number="4">Prev</button>
+                    <button
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="button"
+                      onclick="selectAllFoods()"
+                      step_number="6">Next</button>
+                  </div>
+                </div>
+
+                {% comment %}
+                customer enter email
+                {% endcomment %}
+                <div class="form-step d-none" id="step-6">
+                  <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="contact[email]" />
+                  </div>
+
+                  {% comment %}
+                  Hidden input for customer tag access
+                  {% endcomment %}
+                  <input
+                  id="form_tags"
+                    type="hidden"
+                    name="contact[tags]">
+
+                  {% comment %}
+                  Submit
+                  {% endcomment %}
+                  <div class="submit">
+                    <input
+                      class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
+                      type="submit"
+                      value="Sign up" />
+                  </div>
+                {% endform %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  /**
+ * Define a function to navigate betweens form steps.
+ * It accepts one parameter. That is - step number.
+ */
+  const navigateToFormStep = (stepNumber) => {
+
+/**
+   * Hide all form steps.
+   */
+    document.querySelectorAll(".form-step").forEach((formStepElement) => {
+      formStepElement.classList.add("d-none");
+    });
+
+/**
+   * Mark all form steps as unfinished.
+   */
+    document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+      formStepHeader.classList.add("form-stepper-unfinished");
+      formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+    });
+
+/**
+   * Show the current form step (as passed to the function).
+   */
+    document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+
+/**
+   * Select the form step circle (progress bar).
+   */
+    const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+
+/**
+   * Mark the current form step as active.
+   */
+    formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+    formStepCircle.classList.add("form-stepper-active");
+
+/**
+   * Loop through each form step circles.
+   * This loop will continue up to the current step number.
+   * Example: If the current step is 3,
+   * then the loop will perform operations for step 1 and 2.
+   */
+    for (let index = 0; index < stepNumber; index++) {
+
+/**
+       * Select the form step circle (progress bar).
+       */
+      const formStepCircle = document.querySelector('li[step="' + index + '"]');
+
+/**
+       * Check if the element exist. If yes, then proceed.
+       */
+      if (formStepCircle) {
+
+/**
+           * Mark the form step as completed.
+           */
+        formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+        formStepCircle.classList.add("form-stepper-completed");
+      }
+    }
+  };
+
+/**
+* Select all form navigation buttons, and loop through them.
+*/
+  document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+
+/**
+   * Add a click event listener to the button.
+   */
+    formNavigationBtn.addEventListener("click", () => {
+
+/**
+       * Get the value of the step.
+       */
+      const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+
+/**
+       * Call the function to navigate to the target form step.
+       */
+      navigateToFormStep(stepNumber);
+    });
+  });
+
+// get wine value selection and populate hidden paragraph element
+  let selectWineValue = document.querySelector('#wine-value-select');
+  let wineResult = document.querySelector('#wine-result');
+  selectWineValue.addEventListener('change', function() {
+    wineResult.textContent = this.value;
+  });
+
+// get candies value selection and populate hidden paragraph element
+  let selectCandiesValue = document.querySelector('#candies-value-select');
+  let candiesResult = document.querySelector('#candies-result');
+  selectCandiesValue.addEventListener('change', function() {
+    candiesResult.textContent = this.value;
+  });
+
+  function selectAllRegions() {
+    const regionsContainer = document.querySelector('#regions-wrapper');
+
+// selecting all checkboxes
+// of group language
+    let checkboxes = regionsContainer.querySelectorAll("input[type='checkbox']:checked");
+    var values = [];
+
+// looping through all checkboxes
+    for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = true;
+      values.push(checkboxes[i].value);
+    }
+    console.log(values);
+    regions = values;
+    return regions;
+  };
+
+
+  function selectAllFoods() {
+
+// select checkboxes in the food wrapper
+    const foodContainer = document.querySelector('#food-wrapper');
+
+    let checkboxes = foodContainer.querySelectorAll("input[type='checkbox']:checked");
+    var values = [];
+
+// looping through all checkboxes
+    for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = true;
+      values.push(checkboxes[i].value);
+    }
+    console.log(values);
+    foods = values;
+    return foods;
+  };
+
+  function selectAllFlavors() {
+
+// select checkboxes in the food wrapper
+    const flavorsContainer = document.querySelector('#flavors-wrapper');
+
+    let checkboxes = flavorsContainer.querySelectorAll("input[type='checkbox']:checked");
+    var values = [];
+
+// looping through all checkboxes
+    for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = true;
+      values.push(checkboxes[i].value);
+    }
+    console.log(values);
+    flavors = values;
+    return flavors;
+  };
+
+  document.querySelector("form#contact_form").addEventListener("submit", function(e) {
+    const wineValue = document.getElementById("wine-result").textContent;
+    const candiesValue = document.getElementById("candies-result").textContent;
+
+// const Regions = document.getElementById("regions-result").value;
+// const foodChoices = document.getElementById("food-result").value;
+
+    document.getElementById('form_tags').value = wineValue + "," + regions + "," + foods + "," + candiesValue + "," + flavors;
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Remix PPQ",
+    "target": "section",
+    "enabled_on": {
+      "templates": ["index", "page"]
+    },
+    "stylesheet": "app.css",
+    "javascript": "app.js",
+    "settings": [
+      {
+        "label": "Color",
+        "id": "color",
+        "type": "color",
+        "default": "#000000"
+      }
+    ]
+  }
+{% endschema %}

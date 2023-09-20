@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "remix-ppq"
+client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
+application_url = "https://image-israel-london-ps.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_customers,write_customers"
+
+[auth]
+redirect_urls = [
+  "https://image-israel-london-ps.trycloudflare.com/auth/callback",
+  "https://image-israel-london-ps.trycloudflare.com/auth/shopify/callback",
+  "https://image-israel-london-ps.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "fullglass-winc-dev.myshopify.com"
