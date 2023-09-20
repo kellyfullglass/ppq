@@ -231,7 +231,7 @@
                 {% endcomment %}
                 <div id="step-3" class="form-step d-none">
                   <div class="candies">
-                    <h3>Some lunatic mixed Skittles and M&M's in the same bowl.  Which do you choose?</h3>
+                    <h3>Some lunatic mixed Skittles and M&Ms in the same bowl.  Which do you choose?</h3>
                     <!--
                     <label for="candies-value">Some lunatic mixed Skittles and M&M's in the same bowl.  Which do you choose?
                     </label>-->
@@ -240,9 +240,10 @@
                       class="two-thirds"
                       src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/candies_sweetness_value.png?v=1695063908" />
                     <select id="candies-value-select" class="align--middle-center">
-                      <option>All Skittles</option>
-                      <option>All M&M's</option>
-                      <option>Both. In my mouth.  At the same time.
+                      <option value="">--Please choose an option--</option>
+                      <option value="all_skittles">All Skittles</option>
+                      <option value="all_mms">All M&Ms</option>
+                      <option value="both_candies">Both. In my mouth.  At the same time.
                       </option>
                     </select>
                     <p class="d-none" id="candies-result"></p>
@@ -341,12 +342,12 @@
                     <button
                       class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
                       type="button"
-                      step_number="3">Prev</button>
+                      step_number="3">Previous Question</button>
                     <button
                       class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
                       type="button"
                       onclick="selectAllRegions()"
-                      step_number="5">Next</button>
+                      step_number="5">Next Question</button>
                   </div>
                 </div>
 
@@ -557,12 +558,12 @@
                     <button
                       class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
                       type="button"
-                      step_number="4">Prev</button>
+                      step_number="4">Previous Question</button>
                     <button
                       class="button btn-navigate-form-step btn align--bottom-right btn--form custom-form__button"
                       type="button"
                       onclick="selectAllFoods()"
-                      step_number="6">Next</button>
+                      step_number="6">Next Question</button>
                   </div>
                 </div>
 
@@ -715,7 +716,16 @@ select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mi
 // get candies value selection and populate hidden paragraph element
   let selectCandiesValue = document.querySelector('#candies-value-select');
   let candiesResult = document.querySelector('#candies-result');
+  var select_candies_img = document.querySelector('#sweetness-value-img');
+  select_candies_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mix_candies.png?v=1695236068';
   selectCandiesValue.addEventListener('change', function() {
+    if (selectCandiesValue.value == "all_skittles") {
+      select_candies_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/all_skittles.png?v=1695236068';
+    } else if (selectCandiesValue.value == "all_mms") {
+      select_candies_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/all_mms.png?v=1695236068';
+    } else if (selectCandiesValue.value == "both_candies") {
+      select_candies_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mix_candies.png?v=1695236068';
+    }
     candiesResult.textContent = this.value;
   });
 
