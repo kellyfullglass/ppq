@@ -93,17 +93,24 @@
                 <div class="form-step" id="step-1">
                   <div class="wine">
                     <h3>Do you prefer red or white wine?</h3>
-                    <img
-                      id="wine-value-img"
-                      class="two-thirds"
-                      src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/red_white_wine_value.png?v=1695061893" />
-                    <label for="wine-value"></label>
+
+                    <label for="wine-value-select">
+                      <img
+                        id="wine-value-img"
+                        class="two-thirds"
+                         />
+                      <!--
+                      <img
+                        id="wine-value-img"
+                        class="two-thirds"
+                        src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/red_white_wine_value.png?v=1695061893" />--></label>
                     <select class="align--middle-center" id="wine-value-select">
-                      <option>All Reds</option>
-                      <option>All Whites</option>
-                      <option>Mostly Reds</option>
-                      <option>Mostly Whites</option>
-                      <option>A Mix of Reds & Whites</option>
+                      <option value="">--Please choose an option--</option>
+                      <option value="all_reds">All Reds</option>
+                      <option value="all_whites">All Whites</option>
+                      <option value="mostly_reds">Mostly Reds</option>
+                      <option value="mostly_whites">Mostly Whites</option>
+                      <option value="mix_red_white">A Mix of Reds & Whites</option>
                     </select>
                     <p class="d-none" id="wine-result"></p>
                   </div>
@@ -687,7 +694,21 @@
 // get wine value selection and populate hidden paragraph element
   let selectWineValue = document.querySelector('#wine-value-select');
   let wineResult = document.querySelector('#wine-result');
+//images for switch based on selection
+var select_wine_img = document.querySelector('#wine-value-img');
+select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mix_red_white.png?v=1695232333';
   selectWineValue.addEventListener('change', function() {
+    if (selectWineValue.value == "mostly_reds") {
+      select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mostly_red.png?v=1695232333';
+    } else if (selectWineValue.value == "all_reds") {
+      select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/all_red.png?v=1695232333';
+    } else if (selectWineValue.value == "all_whites") {
+      select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/all_white.png?v=1695232333';
+    } else if (selectWineValue.value == "mostly_whites") {
+      select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mostly_white.png?v=1695232333';
+    } else if (selectWineValue.value == "mix_red_white" ) {
+      select_wine_img.src = 'https://cdn.shopify.com/s/files/1/0822/8513/4115/files/mix_red_white.png?v=1695232333';
+    }
     wineResult.textContent = this.value;
   });
 
