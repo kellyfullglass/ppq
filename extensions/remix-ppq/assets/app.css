@@ -114,10 +114,15 @@ ul.form-stepper li a .form-stepper-circle {
 .form-stepper a {
     cursor: default;
 }
+/************global styles********/
+img#winc-quote-img {
+    width: 35px;
+    height: auto;
+}
 
 /*************wine-value*************/
 #wine-value-img {
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
@@ -134,6 +139,8 @@ ul.form-stepper li a .form-stepper-circle {
     display: inline-grid;
     border-radius: 5px;
     background: #e8e9eb;
+    margin: 30px;
+    padding: 20px;
     
 }
 
@@ -144,6 +151,8 @@ ul.form-stepper li a .form-stepper-circle {
 
 .flavor-select > img {
     border-radius: 5px 5px 0 0;
+    width: 200px;
+    height: 200px;
 }
 #flavors-wrapper {
     padding: 2px 16px;
@@ -152,12 +161,34 @@ ul.form-stepper li a .form-stepper-circle {
     display: none;
 }
 
- 
-/*
+img#heart-btn {
+    
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 50px;
+}
+
+img#heart-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 60%;
+}
+.flavor-image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 50%;
+  }
 #flavors-wrapper input[type="checkbox"]{
     appearance: none;
 }
 
+/*
 .card {
     width: 150px;
    height: 200px;
@@ -207,15 +238,37 @@ ul.form-stepper li a .form-stepper-circle {
 #candies-value-select {
     margin: 0 auto;
 }
+#sweetness-value-img {
+    width: 300px;
+    height: auto;
+}
 
 /**********regions*****/
 .region-select {
     margin: 0 auto;
     display: inline-grid;
 }
+.region-select > label > img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+   
+}
+.region-select > label > img:hover {
+   
+    opacity: 60%;
+}
+
+
 
 /**********foods********/
 .food-select {
     margin: 0 auto;
     display: inline-grid;
+}
+
+.region-select > label > img:hover {
+
+    opacity: 60%;
 }
