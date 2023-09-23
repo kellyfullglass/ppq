@@ -2,7 +2,7 @@
 
 name = "remix-ppq"
 client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
-application_url = "https://petite-aaron-differently-showcase.trycloudflare.com"
+application_url = "https://panama-subsection-palmer-diamond.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_customers,write_customers"
 
 [auth]
 redirect_urls = [
-  "https://petite-aaron-differently-showcase.trycloudflare.com/auth/callback",
-  "https://petite-aaron-differently-showcase.trycloudflare.com/auth/shopify/callback",
-  "https://petite-aaron-differently-showcase.trycloudflare.com/api/auth/callback"
+  "https://panama-subsection-palmer-diamond.trycloudflare.com/auth/callback",
+  "https://panama-subsection-palmer-diamond.trycloudflare.com/auth/shopify/callback",
+  "https://panama-subsection-palmer-diamond.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

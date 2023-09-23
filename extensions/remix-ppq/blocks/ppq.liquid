@@ -342,31 +342,44 @@
               {% endcomment %}
               <div class="form-step d-none" id="step-4">
                 <div class="regions">
+                  <h2>What regions are you interested in trying wines from?</h2>
+                  <p>
+                    <span><img id="winc-quote-img" src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/winc_quote.png?v=1695328694" /></span>
+                    We make wines from over 12 different countries, so we'll try to pair you with regions you enjoy.</p>
                   <fieldset id="regions-wrapper">
-                    <h2>What regions are you interested in trying wines from?</h2>
-                    <p>
-                      <span><img id="winc-quote-img" src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/winc_quote.png?v=1695328694" /></span>
-                      We make wines from over 12 different countries, so we'll try to pair you with regions you enjoy.</p>
-                    
-                      <div class="region-select one-quarter">
-                        <label for="United States">
-                       <span class="icon icon_united-states"><span class="path1"></span><span class="path2"></span>
-                       <span class="path3"></span><span class="path4"></span><span class="path5"></span>
-                       <span class="path6"></span><span class="path7"></span><span class="path8"></span>
-                       <span class="path9"></span></span>
-                        </label>
-                        <input
+
+
+                    <div class="region-select one-quarter">
+                      <label for="United States">
+                        <span class="icon icon_united-states">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                        </span>
+                      </label>
+                      <input
                         class="d-none"
                         type="checkbox"
                         id="United States"
                         name="region"
                         value="United States" />
                       <h6>United States</h6>
-                      </div>
-                        
-                    
-                      <div class="region-select one-quarter ">
-                      <label for="Austria"> <span class="icon icon_austria"><span class="path1"></span><span class="path2"></span></label>
+                    </div>
+
+
+                    <div class="region-select one-quarter">
+                      <label for="Austria">
+                        <span class="icon icon_austria">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -375,25 +388,18 @@
                         value="Austria" />
                       <h6>Austria</h6>
                     </div>
-                    <!--Australia icon malfunctioning
+
                     <div class="region-select one-quarter ">
-                      <label for="Australia"><span class="icon icon_australia"><span class="path1"></span><span class="path2"></span> <span class="path3"></span> <span class="path4"> </span>
-                        <span class="path5"></span> <span class="path6"></span><span class="path7"> </span><span class="path8"> </span><span class="path9"></span> <span class="path10"></span> <span class="path11"></span>
-                           <span class="path12"></span> <span class="path13"> </span><span class="path14"></span> <span class="path15"></span> <span class="path16"></span> <span class="path17"> </span><span class="path18"></span>
-                             <span class="path19"></span> <span class="path20"></span> <span class="path21"> </span><span class="path22"></span> <span class="path23"> </span><span class="path24"> </span><span class="path25"> </span>
-                              <span class="path26"> </span><span class="path27"> </span><span class="path28"></span><span class="path29"> </span><span class="path30"></span><span class="path31"></span> <span class="path32"> </span>
-                                <span class="path33"></span> <span class="path34"></span><span class="path35"></span></label>
-                      <input
-                        class="d-none"
-                        type="checkbox"
-                        id="Australia"
-                        name="region"
-                        value="Australia" />
-                      <h6>Australia</h6>
-                    </div>
-                    -->
-                    <div class="region-select one-quarter ">
-                      <label for="France"><span class="icon icon_france"><span class="path1"></span><span class="path2"><span class="path3"><span class="path4"></span><span class="path5"></span><span class="path6"></span></span></label>
+                      <label for="France">
+                        <span class="icon icon_france">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -405,7 +411,10 @@
 
                     <div class="region-select one-quarter ">
                       <label for="Portugal">
-                        <span class="icon icon_portugal"><span class="path1"></span><span class="path2"></span></span>
+                        <span class="icon icon_portugal">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                        </span>
                       </label>
                       <input
                         class="d-none"
@@ -417,7 +426,12 @@
                     </div>
 
                     <div class="region-select one-quarter ">
-                      <label for="Chile"><span class="icon icon_chile"><span class="path1"></span><span class="path2"></span></span></label>
+                      <label for="Chile">
+                        <span class="icon icon_chile">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -428,7 +442,12 @@
                     </div>
 
                     <div class="region-select one-quarter ">
-                      <label for="Argentina"><span class="icon icon_argentina"><span class="path1"></span><span class="path2"></span></span></label>
+                      <label for="Argentina">
+                        <span class="icon icon_argentina">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -437,20 +456,7 @@
                         value="Argentina" />
                       <h6>Argentina</h6>
                     </div>
-                <!--malfunction
-                    <div class="region-select one-quarter ">
-                      <label for="Italy"><span class="icon icon_italy"><span class="path1"></span><span class="path2"></span> 
-                      <span class="path3"></span> <span class="path4"></span> <span class="path5"></span> 
-                      </span></label>
-                      <input
-                        class="d-none"
-                        type="checkbox"
-                        id="Italy"
-                        name="region"
-                        value="Italy" />
-                      <h6>Italy</h6>
-                    </div>
-                    -->
+
                     <p id="regions-result" class="hidden"></p>
                   </fieldset>
                 </div>
@@ -472,14 +478,28 @@
               Food
               {% endcomment %}
               <div class="form-step d-none" id="step-5">
-                <div id="foods">
-                  <fieldset id="food-wrapper">
-                    <h2>Like food? Tell us your favorites.</h2>
-                    <p>
-                      <span><img id="winc-quote-img" src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/winc_quote.png?v=1695328694" /></span>
-                      For our foodie friends - this helps us recommend wines that pair well with your favorite eats.</p>
-                    <div class="food-select one-quarter">
-                      <label for="Cheese"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cheese.png?v=1694810348" /></label>
+
+                <h2>Like food? Tell us your favorites.</h2>
+                <p>
+                  <span><img id="winc-quote-img" src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/winc_quote.png?v=1695328694" /></span>
+                  For our foodie friends - this helps us recommend wines that pair well with your favorite eats.</p>
+                <div class="icons_food">
+                  <fieldset id="food-wrapper ">
+
+                    <div class="food-select one-eighth mobile--one-quarter">
+                      <label for="Cheese">
+                        <span class="icon icon_cheeses">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -487,8 +507,25 @@
                         name="food"
                         value="Cheese" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Fries"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/fries_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter">
+                      <label for="Fries">
+                        <span class="icon icon_fries">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -496,8 +533,22 @@
                         name="food"
                         value="Fries" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Pizza"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/pizza_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter">
+                      <label for="Pizza">
+                        <span class="icon icon_pizza">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -505,8 +556,20 @@
                         name="food"
                         value="Pizza" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Fish"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/fish_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Fish">
+                        <span class="icon icon_fish">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -514,8 +577,24 @@
                         name="food"
                         value="Fish" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="BBQ"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/bbq_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="BBQ">
+                        <span class="icon icon_bbq">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -523,8 +602,22 @@
                         name="food"
                         value="BBQ" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Sushi"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/sushi_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Sushi">
+                        <span class="icon icon_sushi">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -532,8 +625,27 @@
                         name="food"
                         value="Sushi" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Cured-Meats"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cured_meat.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Cured-Meats">
+                        <span class="icon icon_cured_meats">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -541,8 +653,26 @@
                         name="food"
                         value="Cured Meats" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Thai"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/thai_food.png?v=1695067350" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Thai">
+                        <span class="icon icon_thai">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                        </span>
+                      </label>
                       <input
                         class="d-none"
                         type="checkbox"
@@ -550,8 +680,26 @@
                         name="food"
                         value="Thai" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Salad"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/salad_food.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Salad">
+                        <span class="icon icon_salad">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -560,8 +708,26 @@
                         name="food"
                         value="Salad" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Veggies"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/veggies.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Veggies">
+                        <span class="icon icon_veggies">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -570,8 +736,48 @@
                         name="food"
                         value="Veggies" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Pasta & Cream Sauce"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/pasta_cream.png?v=1695067351" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Pasta & Cream Sauce">
+                        <span class="icon icon_pasta_with_cream_sauce">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                          <span class="path17"></span>
+                          <span class="path18"></span>
+                          <span class="path19"></span>
+                          <span class="path20"></span>
+                          <span class="path21"></span>
+                          <span class="path22"></span>
+                          <span class="path23"></span>
+                          <span class="path24"></span>
+                          <span class="path25"></span>
+                          <span class="path26"></span>
+                          <span class="path27"></span>
+                          <span class="path28"></span>
+                          <span class="path29"></span>
+                          <span class="path30"></span>
+                          <span class="path31"></span>
+                          <span class="path32"></span>
+                          <span class="path33"></span>
+                          <span class="path34"></span>
+                          <span class="path35"></span>
+                          <span class="path36"></span>
+                          <span class="path37"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -580,8 +786,29 @@
                         name="food"
                         value="Pasta & Cream Sauce" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Burgers"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/burgers.png?v=1695218456" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Burgers">
+                        <span class="icon icon_burgers">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                          <span class="path17"></span>
+                          <span class="path18"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -590,8 +817,19 @@
                         name="food"
                         value="Burgers" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Lamb"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/lamb.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Lamb">
+                        <span class="icon icon_lamb">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -600,18 +838,23 @@
                         name="food"
                         value="Lamb" />
                     </div>
-                    <div class="food-select one-quarter">
-                      <label for="Indian"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/indian.png?v=1695218456" /></label>
 
-                      <input
-                        class="d-none"
-                        type="checkbox"
-                        id="Indian"
-                        name="food"
-                        value="Indian" />
-                    </div>
-                    <div class="food-select one-quarter">
-                      <label for="Shellfish"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/shellfish.png?v=1695218456" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Shellfish">
+                        <span class="icon icon_shellfish">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -620,8 +863,32 @@
                         name="food"
                         value="Shellfish" />
                     </div>
-                    <div class="food-select one-third">
-                      <label for="Chili"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chili.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Chili">
+                        <span class="icon icon_chili">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                          <span class="path17"></span>
+                          <span class="path18"></span>
+                          <span class="path19"></span>
+                          <span class="path20"></span>
+                          <span class="path21"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -630,8 +897,40 @@
                         name="food"
                         value="Chili" />
                     </div>
-                    <div class="food-select one-third">
-                      <label for="Chinese"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chinese.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Chinese">
+                        <span class="icon icon_chinese">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                          <span class="path17"></span>
+                          <span class="path18"></span>
+                          <span class="path19"></span>
+                          <span class="path20"></span>
+                          <span class="path21"></span>
+                          <span class="path22"></span>
+                          <span class="path23"></span>
+                          <span class="path24"></span>
+                          <span class="path15"></span>
+                          <span class="path26"></span>
+                          <span class="path27"></span>
+                          <span class="path28"></span>
+                          <span class="path29"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -640,8 +939,29 @@
                         name="food"
                         value="Chinese" />
                     </div>
-                    <div class="food-select one-third">
-                      <label for="Chocolate Cake"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/chocolate_cake.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Chocolate Cake">
+                        <span class="icon icon_chocolate_cake">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                          <span class="path16"></span>
+                          <span class="path17"></span>
+                          <span class="path18"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -650,8 +970,26 @@
                         name="food"
                         value="Chocolate Cake" />
                     </div>
-                    <div class="food-select one-third">
-                      <label for="Poultry"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/poultry.png?v=1695218457" /></label>
+                    <div class="food-select one-eighth mobile--one-quarter ">
+                      <label for="Poultry">
+                        <span class="icon icon_poultry">
+                          <span class="path1"></span>
+                          <span class="path2"></span>
+                          <span class="path3"></span>
+                          <span class="path4"></span>
+                          <span class="path5"></span>
+                          <span class="path6"></span>
+                          <span class="path7"></span>
+                          <span class="path8"></span>
+                          <span class="path9"></span>
+                          <span class="path10"></span>
+                          <span class="path11"></span>
+                          <span class="path12"></span>
+                          <span class="path13"></span>
+                          <span class="path14"></span>
+                          <span class="path15"></span>
+                        </span>
+                      </label>
 
                       <input
                         class="d-none"
@@ -660,17 +998,7 @@
                         name="food"
                         value="Poultry" />
                     </div>
-                    <!--
-                    <label for="Pasta & Red Sauce"><img src="https://cdn.shopify.com/s/files/1/0822/8513/4115/files/cheese.png?v=1694810348" /></label>
 
-                    <input
-                    class="d-none"
-                    type="checkbox"
-                    id="Pasta & Red Sauce"
-                    name="food"
-                    value="Pasta & Red Sauce" />
-
-                    -->
                   </fieldset>
                 </div>
                 <div class="mt-3">
