@@ -2,7 +2,7 @@
 
 name = "remix-ppq"
 client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
-application_url = "https://compiler-range-chocolate-english.trycloudflare.com"
+application_url = "https://estimation-angels-tft-corporation.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_customers,write_customers"
 
 [auth]
 redirect_urls = [
-  "https://compiler-range-chocolate-english.trycloudflare.com/auth/callback",
-  "https://compiler-range-chocolate-english.trycloudflare.com/auth/shopify/callback",
-  "https://compiler-range-chocolate-english.trycloudflare.com/api/auth/callback"
+  "https://estimation-angels-tft-corporation.trycloudflare.com/auth/callback",
+  "https://estimation-angels-tft-corporation.trycloudflare.com/auth/shopify/callback",
+  "https://estimation-angels-tft-corporation.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
