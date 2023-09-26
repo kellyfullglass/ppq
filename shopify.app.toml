@@ -2,7 +2,7 @@
 
 name = "remix-ppq"
 client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
-application_url = "https://causes-saying-commentary-vegetables.trycloudflare.com"
+application_url = "https://money-eos-crest-based.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_customers,write_customers"
 
 [auth]
 redirect_urls = [
-  "https://causes-saying-commentary-vegetables.trycloudflare.com/auth/callback",
-  "https://causes-saying-commentary-vegetables.trycloudflare.com/auth/shopify/callback",
-  "https://causes-saying-commentary-vegetables.trycloudflare.com/api/auth/callback"
+  "https://money-eos-crest-based.trycloudflare.com/auth/callback",
+  "https://money-eos-crest-based.trycloudflare.com/auth/shopify/callback",
+  "https://money-eos-crest-based.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
