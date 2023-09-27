@@ -2,7 +2,7 @@
 
 name = "remix-ppq"
 client_id = "fd25e575b901996b9faf5f65ca3d4fc1"
-application_url = "https://whale-recorded-bailey-chocolate.trycloudflare.com"
+application_url = "https://improving-espn-challenging-weblogs.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_customers,write_customers"
 
 [auth]
 redirect_urls = [
-  "https://whale-recorded-bailey-chocolate.trycloudflare.com/auth/callback",
-  "https://whale-recorded-bailey-chocolate.trycloudflare.com/auth/shopify/callback",
-  "https://whale-recorded-bailey-chocolate.trycloudflare.com/api/auth/callback"
+  "https://improving-espn-challenging-weblogs.trycloudflare.com/auth/callback",
+  "https://improving-espn-challenging-weblogs.trycloudflare.com/auth/shopify/callback",
+  "https://improving-espn-challenging-weblogs.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
