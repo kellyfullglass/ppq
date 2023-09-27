@@ -115,7 +115,8 @@ ul.form-stepper li a .form-stepper-circle {
   cursor: default;
 }
 /************global styles********/
-img#winc-quote-img {
+span > #winc-quote-img {
+  display: inline-block;
   width: 35px;
   height: auto;
 }
@@ -149,10 +150,10 @@ img#heart-btn {
   left: 0;
   right: 0;
   margin: auto;
-  opacity: 20%;
+  opacity: 30%;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  
+  border-radius: 50%;
   
 }
 
@@ -194,14 +195,10 @@ img#heart-btn:hover {
   
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  
-  
-  
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+  }
 
-}
 .slides::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -240,14 +237,10 @@ img#heart-btn:hover {
 .flavor-select > img {
   object-fit: cover;
   position: absolute;
-  /*
-  top: 60px;
-  left: 50px;
-  */
+  
   width: 150px;
   height: auto;
-  /*width: 100%;
-  height: 100%;*/
+  
 }
 
 .slider > a {
@@ -269,13 +262,13 @@ img#heart-btn:hover {
   background: #000;
 }
 
-/* Don't need button navigation */
+/* Don't need button navigation 
 @supports (scroll-snap-type) {
   .slider > a {
     display: none;
   }
 }
-
+*/
 /**************candies*********/
 #candies-value-select {
   margin: 0 auto;
@@ -359,8 +352,8 @@ img#heart-btn:hover {
 .food-select:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.25);
-  
 }
+
 .food-input:checked ~ * .icon {
   
   border-radius:50%;
@@ -397,7 +390,8 @@ img#heart-btn:hover {
   font-size: 100px;
 }
 /**********email input****/
-#email-wrapper\ two-thirds {
+
+#email-wrapper .two-thirds {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -409,7 +403,7 @@ img#heart-btn:hover {
   background-color: #EBF5A9;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0, .1);
   text-align: center;
 }
 
